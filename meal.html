@@ -1,0 +1,38 @@
+<section class="flexi">
+	
+		<div class="box-wrapper">
+			<h2>Enter the Meal Details</h2>
+
+			<form name="mealDetails" novalidation ng-submit="submitMealDetails()">
+				<p>
+					<label for="base-price">Base Meal Price: $</label>
+					<input type="number" ng-minlength="1" name="basePrice" id="base-price" required ng-model="form.basePrice">
+				</p>
+				<p>
+					<label for="tax-rate">Tax Rate: %</label>
+					<input type="number" ng-minlength="1" name="taxRate" id="tax-rate" required ng-model="form.taxRate"> 
+				</p>
+				
+				<p>
+					<label for="tip-percantage">Tip Percentage: %</label>
+					<input type="number" ng-minlength="1" name="tipPercentage" id="tip-percantage" required ng-model="form.tipPercentage">
+				</p>
+				
+				<p>
+					<input type="submit" name="submit-mealDetails" value="Submit">
+					<input type="reset" name="reset-mealDetails" value="Cancel">
+				</p>
+
+			</form>
+		</div>
+
+		<div class="box-wrapper">
+			<h2>Customer Charges</h2>
+			
+			<p>Subtotal <span>{{subtotal}}</span></p>
+			<p>Tip <span>{{tip}}</span></p>
+
+			<p class="total">Total <span>{{customerTotal}}</span></p>
+		</div>
+
+</section>

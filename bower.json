@@ -1,0 +1,23 @@
+{
+  "name": "waitstaff_tool",
+  "homepage": "https://github.com/schmeiger/waitstaff_tool_2",
+  "authors": [
+    "Nati"
+  ],
+  "description": "calculator for my earnings",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "waitstaff",
+    "calculator"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-route": "~1.4.8",
+    "angular": "~1.4.8",
+    "angular-animate": "~1.4.8"
+  }
+}
